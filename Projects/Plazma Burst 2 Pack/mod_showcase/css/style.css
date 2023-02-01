@@ -1,0 +1,134 @@
+body,
+td {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    line-height: 140%;
+    overflow-y: visible;
+}
+
+a:link {
+    color: #fc0;
+    text-decoration: none;
+    font-weight: 700;
+    cursor: pointer;
+    transition: color .4s;
+    transition-timing-function: cubic-bezier(0, 4, 1, 1)
+}
+
+a:visited {
+    color: #fc0;
+    text-decoration: none;
+    font-weight: 700;
+    cursor: pointer
+}
+
+a:hover {
+    color: #ffe375;
+    text-decoration: none;
+    font-weight: 700;
+    cursor: pointer
+}
+
+a:active {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+    cursor: pointer;
+    transition: color 0ms
+}
+
+.m {
+    width: 1191px
+}
+
+.mh {
+    height: 100%
+}
+
+table {
+    border: 0;
+    border-collapse: collapse
+}
+
+.si {
+    word-break: break-word
+}
+
+.si3 {
+    background-color: #303543;
+    word-break: break-word
+}
+
+.si4 {
+    background-color: #22252d;
+    word-break: break-word
+}
+
+.si5 {
+    background-color: #292d36;
+    word-break: break-word
+}
+
+.si6 {
+    background-color: #293629
+}
+
+.si2 {
+    font-size: 15px
+}
+
+.a {
+    height: 60px
+}
+
+.d {
+    background-image: url(../images/footer.png);
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    height: 95px;
+    background-color: transparent
+}
+
+.ba {
+    background-image: url(../images/block_title.png);
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    height: 39px;
+    background-color: transparent;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 15px;
+    background-size: 100% 100%;
+    padding-top: 9px;
+    padding-bottom: 9px
+}
+
+.bb {
+    background-image: url(../images/block_middle.png);
+    width: 100%;
+    background-attachment: scroll;
+    background-repeat: repeat-y;
+    background-position: 0 0;
+    background-color: transparent;
+    padding-top: 10px;
+    padding-left: 13px;
+    padding-right: 13px;
+    padding-bottom: 15px;
+    width: 100vw;
+    background-size:cover
+}
+
+.bc {
+    background-image: url(../images/block_end.png);
+    width: 100vw;
+    background-attachment: scroll;
+    background-repeat: repeat-x;
+    background-position: 0 0;
+    height: 5px;
+    background-color: transparent;
+}

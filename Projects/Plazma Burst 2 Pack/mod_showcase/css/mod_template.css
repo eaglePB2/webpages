@@ -1,0 +1,29 @@
+.slide:nth-of-type(1) {
+  background: #D7A151;
+}
+
+.slide:nth-of-type(2) {
+  background: #F4E4CD;
+}
+
+.slide:nth-of-type(3) {
+  background: #C75534;
+}
+
+.slide:nth-of-type(4) {
+  background: #D1D1D4;
+}
+
+.slide:nth-of-type(5) {
+  background: #FF0000;
+}
+
+/*  body
+{
+	background-color: #000000;
+	background-attachment: fixed;
+	background-image: url(images/bg05.jpg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+}*/

@@ -1,0 +1,42 @@
+.lego0{
+    background-image: url(../../media/image/lego/bg/lego_section.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+main .lego1 {
+    background-image: url(../../media/image/lego/bg/lego_day.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+main .lego2{
+    background-image: url(../../media/image/lego/bg/lego-wrapper.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+main .lego3{
+    z-index: 3;
+    color: white;
+    font-size: 75px;
+    display:flex;
+}
+
+main header h1 {
+  z-index: 3;
+  color: white;
+  font-size: 75px;
+  display:flex;
+
+  visibility: visible;  
+  -webkit-transform: translateY(0) scale(1); 
+  opacity: 1;
+  transform: translateY(0) scale(1); 
+  opacity: 1;
+  -webkit-transition: -webkit-transform 0.7s ease-in 0.8s, opacity 0.7s ease-in 0.8s; 
+  transition: transform 0.7s ease-in 0.8s, opacity 0.7s ease-in 0.8s;
+}

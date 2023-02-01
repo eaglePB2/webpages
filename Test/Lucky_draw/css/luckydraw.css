@@ -1,0 +1,19 @@
+#main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    min-width: 100vw;
+    overflow: hidden;
+    font-size: 300%;
+    text-shadow: 1px 0 0 rgba(255, 255, 255, 0.2), -1px 0 0 rgba(255, 255, 255, 0.2), 0 1px 0 rgba(255, 255, 255, 0.2), 0 -1px 0 rgba(255, 255, 255, 0.2), 1px 1px rgba(255, 255, 255, 0.2), -1px -1px 0 rgba(255, 255, 255, 0.2), 1px -1px 0 rgba(255, 255, 255, 0.2), -1px 1px 0 rgba(255, 255, 255, 0.2)
+}
+
+body {
+    background-image:
+        linear-gradient(to top right,
+            #7f7fd5,
+            #86a8e7,
+            #91eae4);
+    overflow: hidden;
+}

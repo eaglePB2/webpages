@@ -1,0 +1,13 @@
+@charset "UTF-8";
+
+body {
+  background-image: url(../../media/image/index/index_background.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: repeat;
+  height: 100%;
+}
+
+html {
+  height: 100%;
+}

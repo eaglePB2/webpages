@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="icon" href="images/favicon.jpg" sizes="16x16" type="image/jpg">
+    <script src="js/script_update_v2.js"></script>
+    <title>Discord Reactive Images</title>
+</head>
+
+<body>
+    <div class="container">
+        <form id="contact" method="post">
+            <h3>Discord Reactive Images</h3>
+            <h4>Discord 人物跳动显示器</h4>
+            <fieldset>
+                <input id="discord-id" placeholder="你的Discord ID" type="number" tabindex="1" required autofocus>
+            </fieldset>
+            <fieldset>
+                <input id="normal-image-url" placeholder="沒說話時的照片鏈接" type="url" tabindex="2" required>
+            </fieldset>
+            <fieldset>
+                <input id="talking-image-url" placeholder="說話時的照片鏈接" type="url" tabindex="3" required>
+            </fieldset>
+            <fieldset>
+                <h4>沒說話時的照片亮度：</h4>
+                <input type="range" id="normal-image-brightness" name="normal-image-brightness" min="0" max="100" oninput="this.nextElementSibling.value = this.value">
+                <output>50</output>
+                <h4>說話時的照片亮度：</h4>
+                <input type="range" id="talking-image-brightness" name="talking-image-brightness" min="0" max="100" value="100" oninput="this.nextElementSibling.value = this.value">
+                <output>100</output>
+                <h4>說話時的照片跳動幅度：</h4>
+                <input type="range" id="talking-image-bounce" name="talking-image-bounce" min="0" max="50" value="10" oninput="this.nextElementSibling.value = this.value">
+                <output>10</output>
+            </fieldset>
+            <fieldset>
+                <h4>動畫風格：</h4>
+                <input type="radio" id="normal" name="animation" value="normal" checked>
+                <label for="normal">普通（只有變亮和變暗）</label><br>
+                <input type="radio" id="boing" name="animation" value="boing">
+                <label for="boing">跳動（跳动一次）</label><br>
+                <input type="radio" id="inf_boing" name="animation" value="inf_boing">
+                <label for="inf_boing">漂浮（缓慢的从上倒下移动一次）</label><br>
+                <input type="radio" id="fuwa_boing" name="animation" value="fuwa_boing">
+                <label for="fuwa_boing">左右扭动（再微微的上下跳）</label><br>
+            </fieldset>
+            <fieldset>
+                <button type="submit" id="generate-css" onclick="generateCSS();return false">點擊生成你的代碼</button>
+                <button type="submit" id="copy-css" onclick="copyCSS();return false">複製代碼</button>
+            </fieldset>
+            <h4>你的代碼如下：</h4>
+            <fieldset>
+                <textarea id="css-output"></textarea>
+            </fieldset>
+            <h5>請複制以下代碼 並且貼在你的OBS Browser Input的css處。</h5>
+            <p class="copyright">Origin Idea From <a href="https://www.twitch.tv/jiinh" target="_blank"
+                    title="Jiinh">Jiinh</a>, <br> Website CSS designed by <a href="https://colorlib.com/"
+                    target="_blank" title="Colorlib">Colorlib</a>, <br> Jscript origin designed by <a
+                    href="https://twitter.com/kukushie" target="_blank" title="Kukushie">Kukushie</a>, <br>additional options by EaglePB2.</p>
+        </form>
+    </div>
+</body>
+
+</html>

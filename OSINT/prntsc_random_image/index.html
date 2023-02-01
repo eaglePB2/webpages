@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <title>Hi</title>
+    </head>
+    <body>
+        <h1> 正常来说 你会跑到一个新的页面。</h1>
+        <h2> 如果没有的话，有可能是你的游览器挡住了pop-up功能</h2>
+        <h3> 如果你真的很怕莫名其妙被打开新的页面，可以看看console，里面会有要把你导入的网址。</h3>
+        <h4> 刷新页面开启新的随机图片。</h4>
+        <div id = tag-id>
+
+        </div>
+        
+        <script>
+            // Generate a random 2-letter string
+            var letters = "abcdefghijklmnopqrstuvwxyz";
+            var randomString = "";
+        
+            for (var i = 0; i < 2; i++) {
+              // Generate a random number between 0 and 25, which we'll use as an index
+              // into the string of letters
+              var index = Math.floor(Math.random() * 26);
+              randomString += letters[index];
+            }
+        
+            // Generate a random 4-digit number
+            var randomNumber = Math.floor(Math.random() * 10000);
+        
+            // Make sure the number has exactly 4 digits by adding leading zeros if necessary
+            randomNumber = ("0000" + randomNumber).slice(-4);
+        
+            console.log("https://prnt.sc/" + randomString + randomNumber); // Outputs something like "XC1234"
+            
+            assemble = "https://prnt.sc/" + randomString + randomNumber;
+
+            window.open(assemble,'_blank')
+            //document.getElementById('tag-id').innerHTML = "<iframe src= \"https://prnt.sc/" + randomString + randomNumber + " \" height=\"1080px\" width=\"1920px\"></iframe>"
+        </script>
+    </body>
+</html>
+
