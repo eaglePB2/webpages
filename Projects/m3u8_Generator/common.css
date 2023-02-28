@@ -1,14 +1,4 @@
-body {
-    background: url('https://static.vecteezy.com/system/resources/previews/003/168/569/original/abstract-blue-sky-background-with-tiny-clouds-free-photo.jpg') no-repeat;
-    background-size: cover;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-}
-
 h1 {
-    
     top: -10px;
     font-size: 2.5em;
     text-transform: uppercase;
@@ -19,16 +9,15 @@ h1 {
 }
 
 h5 {
-    
     top: 80px;
     color: white;
     text-shadow: 0 0 5px black;
     font-family: 'Poppins', Sans-Serif;
 }
 
-.glass {
-    width: 100vw;
-    height: 720px;
+.glass_screen {
+    width: 75vw;
+    height: 75vh;
     background: radial-gradient(#fff2 30%, #fff4);
     border-radius: 20px;
     box-shadow: 5px 5px 10px #0007, -1px -1px 2px #fff, 1px 1px 2px #555;
@@ -38,8 +27,8 @@ h5 {
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    transform: translateY(25px);
-    transition: transform .25s;
+    transform: translate(20%,20%);
+    transition: transform .75s;
 }
 
 button {
@@ -68,7 +57,7 @@ button:focus {
     border: none;
 }
 
-.glass input {
+.glass_screen input {
     margin: 10px;
     height: 2em;
     background: transparent;
@@ -77,7 +66,7 @@ button:focus {
     transition: border .25s;
 }
 
-.glass input:focus {
+.glass_screen input:focus {
     color: white;
     border-bottom: solid 2px #292;
 }

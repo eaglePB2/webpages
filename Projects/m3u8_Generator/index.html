@@ -12,21 +12,37 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <script src="execute.js"></script>
     <link href="common.css" rel="stylesheet">
+    <link href="background.css" rel="stylesheet">
 </head>
 
 <body>
-    <div class="glass">
-        <div class="shine"></div>
-        <h1>M3U8 播放器</h1>
-        <h5>有時候一個m3u8裏面的.ts太大的時候，就需要耐心等待哦~</h5>
-        <input type="text" id="url" style="width:40%"
-            value="https://bitdash-a.akamaihd.net/content/sintel/hls/playlist.m3u8"> 
-        <button id="btn">▶</button>
-
-        <video id="video" class="video-js vjs-default-skin" preload="none" crossorigin="true" controls width="1280"
-            height="720" controls></video>
-        
+    <div class="bg">
+        <ul class="glass">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+        <div class="glass_screen">
+            <div class="shine"></div>
+            <h1>M3U8 播放器</h1>
+            <h5>有時候一個m3u8裏面的.ts太大的時候，就需要耐心等待哦~</h5>
+            <input type="text" id="url" style="width:40%"
+                value="https://bitdash-a.akamaihd.net/content/sintel/hls/playlist.m3u8"> 
+            <button id="btn">▶</button>
+    
+            <video id="video" class="video-js vjs-default-skin" preload="none" crossorigin="true" controls width="1280"
+                height="720" controls></video>
+            
+        </div>
     </div>
+    
 </body>
 
 </html>
