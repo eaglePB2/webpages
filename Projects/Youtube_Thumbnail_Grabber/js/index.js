@@ -6,12 +6,12 @@ function appendImage() {
     let images = '';
 
     imageTypes.forEach((type) => {
-        images += `<img src="http://img.youtube.com/vi/${videoID}/${type}.jpg" alt="${videoID}/${type}">`;
+        images += `<img src="https://img.youtube.com/vi/${videoID}/${type}.jpg" alt="${videoID}/${type}">`;
     });
 
     for (let i = 1; i <= 3; i++) {
         imageTypealt.forEach((type) => {
-            images += `<img src="http://img.youtube.com/vi/${videoID}/${type}${i}.jpg" alt="${videoID}/${type}${i}">`;
+            images += `<img src="https://img.youtube.com/vi/${videoID}/${type}${i}.jpg" alt="${videoID}/${type}${i}">`;
         });
     }
 
