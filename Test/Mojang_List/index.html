@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset=”UTF-8">
+	<meta name=”viewport” content=”width=device-width, initial-scale=1.0">
+    <title>MOJANG ORDER SHEET</title>
+    <style>
+            .center_me {
+                text-align: center;
+            }
+            .same_row {
+                display: table;
+            }
+            .same_row > input > label {
+                display: table-cell;
+            }
+    </style>
+    </head>
+    <body>
+    <div class="container">
+        <hr />
+        <h1 class="center_me">MOJANG ORDER SHEET</h1>
+        <hr />
+        <p class="center_me">*** Mark all items you wish to order ***</p>
+
+        <form action="/action_page.php">
+            <input type="checkbox" />
+            <label>
+                <b>Minecraft 3D</b> <br />
+                Immersive virtual-reality mining simulation with intense crafting capabilities! <br />
+                Our freshest and radicalest game!
+            </label>
+            <br />
+            <br />
+            <input type="checkbox" />
+            <label> <b>MineCraft 3D: Deeper and darker</b></label><br />
+            gantic expansion pack: 3 new ores, 7 new weapons and 11 new enemy variants.<br />
+            Including Buff Crepper and Evilshroom II!<br />
+            <br />
+            <input type="checkbox" />
+            <label> <b>MineCraft 3D: Mines of North Pole</b> </label><br />
+            Obligatory holiday map pack. Ideal for X-mas '94!<br />
+            <br />
+            <input type="checkbox" />
+            <label> <b>MineCraft 3D: Strategy Guide</b> </label><br />
+            Only the hottest of tips, guides and cheats! Mandatory for every pickaxe maniac!<br />
+            <br />
+            <input type="checkbox" />
+            <label> <b>Themed PC-Speaker Set</b> </label><br />
+            Collectors' item! Guarantees best sound experience!<br />
+            <br />
+            <input type="checkbox" />
+            <label> <b>MineCraft 3D: Sticket set</b> </label><br />
+            "Better than nothing". Ideal for your younger sibling!<br />
+            <br />
+            <input type="checkbox" disabled />
+            <label> <b>MineCraft 3D: Action figurine set </b></label><br />
+            You have to acquire them all!<br />
+            <br />
+            <hr />
+            <input type="checkbox" />
+            <label> <b>MineCraft 2 </b></label><br />
+            Classic 2D Minecraft experience. If you haven't played it yet, shame on you!<br />
+            <br />
+            <input type="checkbox" />
+            <label> <b>MineCraft 2: Swedish Parliamentary Elections edition</b></label><br />
+            Finally, the expansion pack you've been waiting for!<br />
+            <br />
+            <input type="checkbox" />
+            <label> <b>MineCraft 2: All the guns!</b></label><br />
+            'Nuff said<br />
+            <br />
+            <hr />
+            <input type="checkbox" />
+            <label> <b>Fermented Herring Simulator VII</b></label><br />
+            Why do you keep asking for this?<br />
+            <br />
+            <input type="checkbox" />
+            <label> <b>Fermented Herring Simulator VII: Thorium Pack</b></label><br />
+            No! Really, stop!<br />
+            <br />
+            <input type="checkbox" />
+            <label> <b>Fermented Herring Simulator VII: Scratch and sniff</b></label><br />
+            <br />
+            <hr />
+            <input type="checkbox" />
+            <label> <b>Doom 2</b></label><br />
+            Completely not related to other games named Doom. This one is about gardening.<br />
+            <br />
+            <hr />
+
+            <b>GRAPHICS:</b>
+            <input type="radio" name="graphics" />
+            <label>SVGA</label>
+            <input type="radio" name="graphics" />
+            <label>VGA</label>
+            <input type="radio" name="graphics" />
+            <label>EGA</label>
+            <input type="radio" name="graphics" id="others" value="other" />Other:
+            <input type="text" name="other" id="others" />
+            <br />
+
+            <b>COMPUTER:</b>
+            <input type="radio" name="computer" />
+            <label>PENTIUM/586 (fancy)</label>
+            <input type="radio" name="computer" />
+            <label>486</label>
+            <input type="radio" name="computer" id="others" value="other" />Other:
+            <input type="text" name="other" id="others" />
+            <br />
+
+            <b>SOUND CARD:</b>
+            <input type="radio" name="sound_card" />
+            <label>Sound Blaster &amp; Pro</label>
+            <input type="radio" name="sound_card" />
+            <label>SB 16</label>
+            <input type="radio" name="sound_card" />
+            <label>SB AWE 32</label>
+            <input type="radio" name="sound_card" />
+            <label>Ad Lib</label>
+            <input type="radio" name="sound_card" />
+            <label>PAS 16</label>
+            <input type="radio" name="sound_card" />
+            <label>GUS</label>
+            <input type="radio" name="sound_card" />
+            <label>None</label>
+            <input type="radio" name="sound_card" id="others" value="other" />Other:
+            <input type="text" name="other" id="others" />
+            <br />
+            <br />
+
+            <hr />
+            <hr />
+
+            <p>!!! Orders must be received by April 1st 1995 or while stocks last !!!</p>
+
+            <b>Name (please print) </b>
+            <input type="text" /> <br />
+            <b>Address </b>
+            <textarea rows="4" cols="50"></textarea><br />
+            <div class="same_row">
+                <label for="City"><b>City </b></label>
+                <input name="City" type="text" />
+                <label for="State"><b>St./Prov. </b></label>
+                <input name="State" type="text" />
+                <label for="ZIP"><b>ZIP/Code </b></label>
+                <input name="ZIP" type="text" />
+            </div>
+            <br />
+            <div class="same_row">
+                <label for="Country"><b>Country (if not USA) </b></label>
+                <input name="Country" type="text" />
+                <label for="Phone"><b>Phone/Fax </b></label>
+                <input name="Phone" type="text" />
+            </div>
+            <p>
+                Mail to: Mojang PC Repair and Software AB <br />
+                Söder Mälarstrand 43 <br />
+                118 25 Stockholm <br />
+                Sweden <br />
+                <br />
+                Thank you for your order!<br />
+                All items subject to availability.
+            </p>
+            <p>Where do you get Minecraft 3D Shareware (check favorite two only)?</p>
+            <input type="checkbox" id="cb1" class="chkGroup" />
+            <label> Mojang home BBS: only for cool people</label><br />
+            <input type="checkbox" id="cb2" class="chkGroup" />
+            <label> MCompuServe</label><br />
+            <input type="checkbox" id="cb3" class="chkGroup" />
+            <label> America Online</label><br />
+            <input type="checkbox" id="cb4" class="chkGroup" />
+            <label> Other BBS -- Please write name:</label><br />
+            <input type="checkbox" id="cb5" class="chkGroup" />
+            <label> Shareware catalog -- Please write name: </label><br />
+            <input type="checkbox" id="cb6" class="chkGroup" />
+            <label> Work, a friend or a relative</label><br />
+            <input type="checkbox" id="cb7" class="chkGroup" />
+            <label> Retail store, off a rack, in a box or other simple packaging </label><br />
+            <input type="checkbox" id="cb8" class="chkGroup" class="chkGroup" />
+            <label> CD-ROM disk </label><br />
+            <input type="checkbox" id="others" value="other" /> Other: 
+            <input type="text" name="other" id="others" /><br />
+            <br />
+            <input type="submit" value="--- continued ---" />
+            <input type="reset" value="Messed up?" />
+        </form>
+</div>
+        <script>
+            var totChecks = 0;
+            $(".chkGroup").on("change", function () {
+                if ($(this).prop("checked") == true) {
+                    if (totChecks > 2) {
+                        /*cancel your action*/
+                        console.log("too many checks!");
+                        return false;
+                    }
+                    /*otherwise, proceed*/
+                    totChecks = totChecks + 1;
+                } //checkbox is unchecked, so remove a point from totChecks.
+                else {
+                    totChecks = totChecks - 1;
+                }
+            });
+        </script>
+    </body>
+</html>
