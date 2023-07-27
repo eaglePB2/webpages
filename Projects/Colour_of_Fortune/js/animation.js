@@ -23,6 +23,7 @@ easyBtn.addEventListener("click", function () {
     medBtn.classList.remove("selected");
     hardBtn.classList.remove("selected");
     numSquares = 3;
+    colors = randomColor(numSquares); // Update the colors array
 })
 
 medBtn.addEventListener("click", function () {
@@ -30,6 +31,7 @@ medBtn.addEventListener("click", function () {
     medBtn.classList.add("selected");
     hardBtn.classList.remove("selected");
     numSquares = 6;
+    colors = randomColor(numSquares); // Update the colors array
 })
 
 hardBtn.addEventListener("click", function () {
@@ -37,12 +39,13 @@ hardBtn.addEventListener("click", function () {
     medBtn.classList.remove("selected");
     hardBtn.classList.add("selected");
     numSquares = 9;
+    colors = randomColor(numSquares); // Update the colors array
 })
 
 //Starts Button Logic//
 resetBtn.addEventListener("click", function () {
     colors = randomColor(numSquares);
-    pickedColor = pickColor();
+    pickedColor = pickColor(); // Randomly pick a color from the updated colors array
     colorDisplay.textContent = pickedColor;
     resetBtn.textContent = "New Puzzle";
     for (let i = 0; i < squares.length; i++) {
@@ -56,6 +59,7 @@ resetBtn.addEventListener("click", function () {
         }
     }
 })
+
 
 //Detect if player selected correct color//
 for (let i = 0; i < squares.length; i++) {
@@ -91,14 +95,16 @@ function pickColor() {
 }
 
 function randomColor(num) {
-    //array
     let array = [];
-    //random num into array :3
-    for (let i = 0; i < num; i++) {
-        array.push(randomColorResult());
+    while (array.length < num) {
+        let newColor = randomColorResult();
+        if (!array.includes(newColor)) {
+            array.push(newColor);
+        }
     }
     return array;
 }
+
 
 function randomColorResult() {
     var R = Math.floor(Math.random() * 256);
